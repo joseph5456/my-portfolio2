@@ -56,3 +56,12 @@ p {
     height: 200px;
     background-color: skyblue;
 }
+
+#nav-name {
+    margin-right: 1000px;
+}
+
+.nav {
+    color: white;
+    margin: 10px;
+}
