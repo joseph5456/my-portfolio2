@@ -41,3 +41,18 @@ td {
 .element2 {
     background-color: lightgreen;
 }
+
+p {
+    color: blue;
+    margin: 10px 300px;
+    border: 2px solid blue;
+}
+
+
+.box {
+    max-width: 150px;
+    width: 200px;
+    max-height: 150px;
+    height: 200px;
+    background-color: skyblue;
+}
