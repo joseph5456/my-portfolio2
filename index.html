@@ -9,7 +9,7 @@
 
     <body>
         <nav>
-            <span id="nav-name">Joseph Nguyen <a href="#about">About</a> <a href="#skills">Skills</a> <a href="#projects">Projects</a> <a href="Joseph_s_resume.pdf">Resume</a></span>
+            <span id="nav-name">Joseph Nguyen <a class="nav-bar" href="#about">About</a> <a class="nav-bar" href="#skills">Skills</a> <a class="nav-bar" href="#projects">Projects</a> <a class="nav-bar" href="Joseph_s_resume.pdf">Resume</a></span>
         </nav>
 
         <section id="header">
@@ -19,7 +19,8 @@
             <div class="description">I am a passionate student based in Georiga, currently studying Computer Science. Alongside my studies, I do
                 web development freelancing work, making websites for various businesses. I have a growing interest in UI/UX
                 design, as well as front end development in general. I'm looking forward to exploring new opportunities to enhance my skills.
-            </div>
+            </div> 
+            <img class="headshot" src="headshot.png">
 
             <span class="resumeButton"> 
                 <a href="Joseph_s_resume.pdf" target="_blank">Get my resume</a>
@@ -28,69 +29,45 @@
         
 
         <main>
-            <section id="about">
+            <section id="about" class="headings">
                 <h2>About Me</h2>
-                <h3 style="color: red;">Past</h3>
+                <h3 style="color: white;">Past</h3>
                 <p style= "border: 2px solid red;">Growing up, I had many passions such as playing tennis, building legos, collecting pokemon cards, and of course programming</p>
                 <h3>Present</h3>
-                <p>Currently, I am a Computer Science student at <span style="color: red; border: 2px solid green;">The University of Georgia.</span></p>
+                <p>Currently, I am a Computer Science student at <span style="color: #e31b6d; border: 2px solid #e31b6d;">The University of Georgia.</span></p>
                 <h3>Future</h3>
                 <p>I wish to connect with more people in the industry and secure a job by graduation</p>
             </section>
 
-            <Section id="skills">
+            <Section id="skills" class="headings">
                 <h2>Skills</h2>
             </Section>
         
-            <section id="projects">
+            <section id="projects" class="headings">
                 <h2>Projects</h2>
                 <p>example</p>
             </section>
 
-            <div class="box">hello</div>
 
-            <table>
-                <caption>My expenses (demo)</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Items</th>
-                        <th scope="col">Cost</th>
-                    </tr>    
-                </thead>
+            <!--business card-->
 
-                <tbody>
-                    <tr>
-                        <th scope="row">Food</th>
-                        <td>$100</td>
-                    </tr>
-                    <tr>
-                        <th>Fun stuff</th>
-                        <td>$200</td>
-                    </tr>
-                    <tr>
-                        <th>School</th>
-                        <td>$300</td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-                    <tr>
-                        <th scope="row">Totals</th>
-                        <td>$600</td>
-                    </tr>
-                </tfoot>
-                
-            </table>
-
-            <div class="container">
-                <span class="inline-block-element element1">Inline Block Element 1</span>
-                <span class="inline-block-element element2">Inline Block Element 2</span>
+            <div class="business-card">
+                <img class="profile-image" src="https://img.freepik.com/premium-vector/blue-frog-white-background_1019634-190.jpg" alt="pic of flower">
+                <p class="business-card-p" class="full-name">Joseph Nguyen</p>
+                <p class="business-card-p" class="designation">Freelance Web Developer</p>
+                <p class="business-card-p" class="company">Company name (TBD)</p>
+                <hr>
+                <p class="business-card-p">jnguyen.0770@gmail.com</p>
+                <p class="business-card-p">470-272-5986</p>
+                <a class="portfolio-link" href="https://github.com/joseph5456/my-portfolio">Portfolio</a>
+                <hr>
+                <div class="social-media">
+                    <h2>Connect with me</h2>
+                    <a href="https://x.com">Twitter</a>
+                    <a href="https://www.linkedin.com/in/joseph-nguyen-685711334">LinkedIn</a>
+                    <a href="https://github.com/joseph5456">GitHub</a>
+                </div>
             </div>
-
-            <p>Paragraph one</p>
-            <p>Paragraph two</p>
-            <p>Paragraph three</p>
-
         </main>
 
     </body>
