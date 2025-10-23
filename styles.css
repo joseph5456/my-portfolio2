@@ -1,5 +1,6 @@
 body {
     background-color: #111821;
+    font-family: sans-serif;
 }
 
 #nav-name {
@@ -22,13 +23,13 @@ body {
 }
 
 .resumebutton {
-    margin:5px;
+   
 }
 
 .resumeButton a{
     color: #e31b6d; 
     border: 2px solid #e31b6d;
-    padding: 5px;
+    padding: 4px;
     font-size: 30px;
     text-decoration: none;
 }
@@ -39,6 +40,7 @@ body {
 
 .headshot {
     border: 3px solid #e31b6d;
+    width: 200px;
 }
 
 .headings {
@@ -63,6 +65,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family:Arial, sans-serif;
+  border: 5px solid #4169E1;
 }
 
 a {
@@ -71,4 +74,11 @@ a {
 
 .profile-image {
   max-width: 100%;
+  border: 5px solid #4169E1;
+  box-sizing: border-box;
 }
+
+hr {
+    border: 1px solid #4169E1;
+}
+
