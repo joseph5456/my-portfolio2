@@ -3,15 +3,21 @@ body {
     font-family: sans-serif;
 }
 
-#nav-name {
-    text-align: left;
-    color: white;
+.nav-bar {
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
 }
 
-.nav-bar {
-    text-align: right;
-    color: white;
-    margin: 10px;
+.nav-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-options a:hover {
+    color: #e31b6d;
 }
 
 .description {
@@ -26,7 +32,7 @@ body {
    
 }
 
-.resumeButton a{
+.resumeButton a {
     color: #e31b6d; 
     border: 2px solid #e31b6d;
     padding: 4px;
@@ -66,6 +72,7 @@ body {
   margin-right: auto;
   font-family:Arial, sans-serif;
   border: 5px solid #4169E1;
+  color:white;
 }
 
 a {
@@ -81,4 +88,25 @@ a {
 hr {
     border: 1px solid #4169E1;
 }
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.nav-bar a:hover {
+    color: #e31b6d;
+}
+
+.social-media a:hover {
+    color: #4169E1;
+}
+
+.business-card a:hover {
+    color: #4169E1;
+}
+
 
