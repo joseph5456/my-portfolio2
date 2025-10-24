@@ -1,6 +1,11 @@
 body {
     background-color: #111821;
     font-family: sans-serif;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY.jpg);
+    background-size: contain;
+    /*background-repeat: repeat-y;
+    min-height: 50px;*/
+    background-attachment: fixed;
 }
 
 .nav-bar {
@@ -16,8 +21,36 @@ body {
     gap: 1rem;
 }
 
+.nav-options a {
+    background-color: #e31b6d;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
 .nav-options a:hover {
-    color: #e31b6d;
+    background-color: #DC143C;
+}
+
+.nav-options a:active {
+    background-color: #8B0000;
+}
+
+.nav-options a:link ,
+.nav-options a:visited{
+    color: white;
+}
+
+/*.nav-options a:visited {
+    color: white;
+}*/
+
+.nav-name {
+    font-size: 25px;
+}
+
+.intro-container {
+    margin-top: 100px;
 }
 
 .description {
@@ -28,8 +61,12 @@ body {
     display: inline;
 }
 
-.resumebutton {
-   
+.resumeButton {
+   margin-top: 15px;
+   transition: all 0.3s ease;
+   padding: 1.5rem;
+   margin-bottom: 2rem;
+   background-color: white;
 }
 
 .resumeButton a {
@@ -40,13 +77,19 @@ body {
     text-decoration: none;
 }
 
+.resumeButton:hover {
+    transform: scale(1.02);
+}
+
 .headingName {
     color: white;
 }
 
 .headshot {
     border: 3px solid #e31b6d;
+    border-radius: 10px;
     width: 200px;
+    margin-top: 10px;
 }
 
 .headings {
@@ -72,6 +115,7 @@ body {
   margin-right: auto;
   font-family:Arial, sans-serif;
   border: 5px solid #4169E1;
+  border-radius: 10px;
   color:white;
 }
 
@@ -89,24 +133,19 @@ hr {
     border: 1px solid #4169E1;
 }
 
-a:link {
-    color: white;
-}
-
-a:visited {
-    color: white;
-}
-
-.nav-bar a:hover {
-    color: #e31b6d;
-}
-
-.social-media a:hover {
+.social-media, .business-card a:hover {
     color: #4169E1;
 }
 
-.business-card a:hover {
-    color: #4169E1;
-}
+
+/*.gradient {
+    background: linear-gradient(to right, purple, royalblue);
+    height: 40vh;
+
+    background: radial-gradient(circle closest-side at center, red, yellow 50%, green);
+    height: 60vh;
+}*/
+
+
 
 
