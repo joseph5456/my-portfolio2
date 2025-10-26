@@ -46,6 +46,8 @@ body {
 
 .intro-container {
     margin-top: 100px;
+    margin-bottom:100px;
+    margin-left: 50px;
 }
 
 .description {
@@ -57,8 +59,8 @@ body {
 }
 
 .resumeButton {
-    margin-top:15px;
-   padding: 10px;
+   margin-top:20px;
+   
    transition: all 0.3s ease;
    display:inline-block;
 }
@@ -81,7 +83,6 @@ body {
 
 .headshot {
     border: 3px solid #e31b6d;
-    border-radius: 10px;
     width: 200px;
     margin-top: 10px;
     display: block;
@@ -128,10 +129,25 @@ hr {
     border: 1px solid #4169E1;
 }
 
-.social-media, .business-card a:hover {
+.portfolio-link {
+    color :white;
+}
+
+.social-media a:link,
+.social-media a:visited {
+    color: white;
+}
+
+.social-media a:hover,
+.portfolio-link a:hover {
     color: #4169E1;
 }
 
+
+
+main {
+    margin-left: 50px;
+}
 
 /*.gradient {
     background: linear-gradient(to right, purple, royalblue);
