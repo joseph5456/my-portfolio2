@@ -3,6 +3,18 @@ body {
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+
+/* nav */
 .nav-bar {
     color:white;
     display: flex;
@@ -36,18 +48,19 @@ body {
     color: white;
 }
 
-/*.nav-options a:visited {
-    color: white;
-}*/
-
 .nav-name {
     font-size: 25px;
+}
+
+
+/* intro section */
+main {
+    margin-left: 50px;
 }
 
 .intro-container {
     margin-top: 100px;
     margin-bottom:100px;
-    margin-left: 50px;
 }
 
 .description {
@@ -60,9 +73,8 @@ body {
 
 .resumeButton {
    margin-top:20px;
-   
-   transition: all 0.3s ease;
    display:inline-block;
+   transition: all 0.3s ease;
 }
 
 .resumeButton a {
@@ -74,7 +86,7 @@ body {
 }
 
 .resumeButton:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 
 .headingName {
@@ -90,6 +102,23 @@ body {
 
 .headings {
     color:white;
+}
+
+/* skills section */
+
+.skills-container {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skills {
+    font-size: 1.5rem;
+    color: #e31b6d;
+    background-color: #223247;
+    padding: 1rem 2.5rem;
+    border-radius: .3rem;
 }
 
 
@@ -112,11 +141,17 @@ body {
   font-family:Arial, sans-serif;
   border: 5px solid #4169E1;
   border-radius: 10px;
-  color:white;
+  color: white;
+  box-shadow: 0 4px 8px white;
+  transition: transform 0.3s;
 }
 
-a {
-    text-decoration: none;
+.business-card a {
+    color:white;
+}
+
+.business-card:hover {
+    transform: scale(1.1);
 }
 
 .profile-image {
@@ -129,25 +164,16 @@ hr {
     border: 1px solid #4169E1;
 }
 
-.portfolio-link {
-    color :white;
-}
 
 .social-media a:link,
 .social-media a:visited {
     color: white;
 }
 
-.social-media a:hover,
-.portfolio-link a:hover {
+:is(.social-media a, .business-card a):hover {
     color: #4169E1;
 }
 
-
-
-main {
-    margin-left: 50px;
-}
 
 /*.gradient {
     background: linear-gradient(to right, purple, royalblue);
