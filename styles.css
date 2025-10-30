@@ -120,7 +120,7 @@ section {
 .skills-container {
     display: flex;
     width: 100%;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
