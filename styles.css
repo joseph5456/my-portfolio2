@@ -198,14 +198,60 @@ hr {
     color: #4169E1;
 }
 
+.form-area {
+    height: 320px;
+    padding: 100px;
+}
 
-/*.gradient {
-    background: linear-gradient(to right, purple, royalblue);
-    height: 40vh;
+label {
+    display: block;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
 
-    background: radial-gradient(circle closest-side at center, red, yellow 50%, green);
-    height: 60vh;
-}*/
+#questions {
+    width: 100%;
+    min-height: 120px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #111;
+    resize: both;
+    box-sizing: border-box;
+}
+
+#questions:focus {
+    border-color:#1e90ff;
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.4); 
+    outline: none;
+}
+
+.submit-button {
+    display:block;
+    margin-top: 1rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius:  4px;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color:#187bcd;
+}
+
+:focus {
+    box-shadow: 0 0 0 3px rgba(255, 50, 100, 0.4); 
+    outline: none;
+}
+
+
 
 
 
