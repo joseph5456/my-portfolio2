@@ -68,7 +68,18 @@ section {
 .headshot {
     border: 3px solid #e31b6d;
     width: 300px;
-    margin-right: 10%;
+    position: relative;
+    z-index: 2;
+}
+
+.headshot-border {
+    width:300px;
+    height:350px;
+    background-color: #e31b6d;
+    display:flex;
+    transform: translate(-300px, 20px);
+    position: relative;
+    z-index: 1;
 }
 
 .flex-wrapper {
