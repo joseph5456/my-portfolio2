@@ -77,7 +77,7 @@ section {
     height:350px;
     background-color: #e31b6d;
     display:flex;
-    transform: translate(-300px, 20px);
+    transform: translate(-300px, 15px);
     position: relative;
     z-index: 1;
 }
@@ -90,19 +90,26 @@ section {
 
 .resumeButton {
    display:inline-block;
-   transition: all 0.3s ease;
+   background-color:#e31b6d;
+   position: relative;
+   z-index: 1;
 }
 
 .resumeButton a {
+    display:inline-block;
     color: #e31b6d; 
-    border: 2px solid #e31b6d;
-    padding: 4px;
     font-size: 30px;
     text-decoration: none;
+    position: relative;
+    z-index: 2;
+    background-color: #111821;
+    border: 2px solid #e31b6d;
+    padding: 6px;
+    transition: all 0.3s ease;
 }
 
-.resumeButton:hover {
-    transform: scale(1.1);
+.resumeButton a:hover {
+    transform: translate(-7px, -7px);
 }
 
 .headingName {
