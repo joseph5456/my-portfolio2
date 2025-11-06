@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>My Portfolio</title>
+
+        <!--font import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -25,7 +30,7 @@
 
         <!-- Main intro section -->
         <main>
-            <section>
+            <section class="intro-section">
                 <div class="intro-container">
                     <h1 style="color:#A9A9A9">Hello! I am</h1>
                     <h1 class="headingName">Joseph Nguyen</h1>
@@ -49,7 +54,7 @@
             <div id="about" class="headings">
                 <h1>About Me</h1>
             </div>
-            <section class="about">
+            <section class="about-section">
                 <h2>Past</h2>
                 <p>Growing up, I had many passions such as playing tennis, playing the guitar, hiking, collecting pokemon cards, and of course programming</p>
                 <h2>Present</h2>
@@ -63,7 +68,7 @@
             <div id="skills" class="headings">
                 <h1>Skills</h1>
             </div>
-            <section class="skills">
+            <section class="skills-section">
                 <h2>Languages</h2>
                 <div class="skills-container">
                     <div class="each-skill">Javascript</div>
@@ -101,8 +106,53 @@
             <div id="projects" class="headings">
                 <h1>Projects</h1>
             </div>
-            <section class="each-project">
-                <p>example</p>
+
+            <section class="projects">
+                <div class="each-project">
+                    <div class="project-image">
+                        <img src="workouttrackerplaceholder.webp">
+                    </div>
+
+                    <div class="project-information">
+                        <h3>Workout Tracker</h3>
+                        <div class="tech-stack-container">
+                            <div class="made-with">Made with:</div>
+                            <div class="tech-stack">Java</div>
+                            <div class="tech-stack">Spring Boot</div>
+                            <div class="tech-stack">REST API</div>
+                        </div>
+                        <p class="project-description">Java-based workout tracking application enabling users to log exercises, sets, reps, and weights
+                        with file-based storage.
+                        </p>
+                        <div class="project-button">
+                            <a href="https://github.com/joseph5456/workout-tracker" target="_blank">Check it out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-project">
+                    <div class="project-image">
+                        <img src="worldecodataimg.png">
+                    </div>
+                    <div class="project-information">
+                        <h3>World Eco Data</h3>
+                        <div class="tech-stack-container">
+                            <div class="made-with">Made with:</div>
+                            <div class="tech-stack">React</div>
+                            <div class="tech-stack">JavaScript</div>
+                            <div class="tech-stack">Java</div>
+                            <div class="tech-stack">Spring Boot</div>
+                            <div class="tech-stack">REST API</div>
+                            <div class="tech-stack">HTML/CSS</div>
+                        </div>
+                        <p class="project-description">Full-stack web application with interactive world map displaying environmental statistics (land arability, forest
+coverage, crop data) by country.
+                        </p>
+                        <div class="project-button">
+                            <a href="https://github.com/joseph5456/world-eco-data" target="_blank">Check it out</a>
+                        </div>
+                    </div>
+                    
+                </div>
             </section>
 
 
@@ -127,6 +177,7 @@
             </div>
 
 
+            <!--Question box-->
             <form class="form-area">
                 <label for="questions">Any Questions?</label>
                 <textarea id="questions" type="text" name="questions" placeholder="Type questions here..."></textarea>
