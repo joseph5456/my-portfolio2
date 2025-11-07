@@ -30,18 +30,18 @@ a {
 }
 
 .nav-options a {
-    background-color: #e31b6d;
+    background-color: #1E90FF;
     padding: 10px;
     border-radius: 5px;
     font-size: 20px;
 }
 
 .nav-options a:hover {
-    background-color: #DC143C;
+    background-color: #4169E1;
 }
 
 .nav-options a:active {
-    background-color: #8B0000;
+    background-color: #0f2edc;
 }
 
 .nav-options a:link ,
@@ -56,9 +56,13 @@ a {
 
 /* intro section */
 
+.text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .description {
-    margin-right: 10%;
-    margin-bottom: 25px;
     font-size: 25px;
     color:white;
     display: flex;
@@ -66,44 +70,60 @@ a {
 }
 
 .headshot {
-    border: 3px solid #e31b6d;
-    width: 300px;
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
     position: relative;
     z-index: 2;
+    object-fit: cover;
 }
 
 .headshot-border {
-    width:300px;
-    height:350px;
-    background-color: #e31b6d;
-    display:flex;
-    transform: translate(-300px, 15px);
+    position: absolute;
+    inset: 0;                    /* exactly same width/height as the image */
+    /* REMOVE any height:100% you had before */
+    background: #1E90FF;         /* your card color (optional) */
+    border: 2px solid #1E90FF;   /* outline (optional) */
+    transform: translate(20px, 20px); /* offset it from the image */
+    z-index: 0;
+}
+
+.headshot-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 350px;  /* cap size */
+    height: auto;      /* keep aspect ratio */
+    border: 3px solid #1E90FF;
     position: relative;
     z-index: 1;
+    margin-right: 6rem;
+    flex-shrink: 0;
 }
 
 .flex-wrapper {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 10rem;
+    align-items: start;
 }
 
 .resumeButton {
    display:inline-block;
-   background-color:#e31b6d;
+   background-color:#1E90FF;
    position: relative;
    z-index: 1;
+   align-self: flex-start;
 }
 
 .resumeButton a {
     display:inline-block;
-    color: #e31b6d; 
+    color: #1E90FF; 
     font-size: 30px;
     text-decoration: none;
     position: relative;
     z-index: 2;
     background-color: #111821;
-    border: 2px solid #e31b6d;
+    border: 2px solid #1E90FF;
     padding: 6px;
     transition: all 0.3s ease;
 }
@@ -116,16 +136,62 @@ a {
     color: white;
 }
 
-.headings {
+.headings h1{
     color:white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
+    font-weight: 300;
 }
 
 /* About Section */
 
-.about-section p {
+.about-section {
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-section h2 {
+    color:#1E90FF;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.about-each-tense {
+    align-items: center;
+    display: flex;
+    width: 30%;
+    flex-direction:column;
     font-size: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.school-name {
+    background-color:#1E90FF;
+    position: relative;
+    z-index: 1;
+    display:inline-block;
+}
+
+.school-name a {
+    display: inline-block;
+    color: #1E90FF; 
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+    padding: 3px;
+    background-color: #111821;
+    border: 2px solid #1E90FF;
+    transition: all 0.3s ease;
+}
+
+.school-name a:hover {
+    transform: translate(-7px, -7px);
 }
 
 /* skills section */
@@ -138,7 +204,7 @@ a {
 
 .each-skill {
     font-size: 1.5rem;
-    color: #e31b6d;
+    color: #1E90FF;
     background-color: #223247;
     padding: 1rem 2.5rem;
     border-radius: .3rem;
@@ -169,10 +235,10 @@ a {
 
 .project-image {
     width: 40%;
-    border: .3rem solid #e31b6d;
+    border: .3rem solid #1E90FF;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 0 20px 1px #e31b6d;
+    box-shadow: 0 0 20px 1px #1E90FF;
 }
 
 .project-image img{
@@ -207,7 +273,7 @@ a {
 
 .tech-stack {
     font-size: 1.5rem;
-    color: #e31b6d;
+    color: #1E90FF;
     font-weight: 500;
 }
 
@@ -218,7 +284,7 @@ a {
 
 .project-button {
     display:inline-block;
-    background-color:#e31b6d;
+    background-color:#1E90FF;
     position: relative;
     z-index: 1;
     width: 180px;
@@ -230,13 +296,13 @@ a {
 
 .project-button a {
     display:inline-block;
-    color: #e31b6d; 
+    color: #1E90FF; 
     font-size: 30px;
     text-decoration: none;
     position: relative;
     z-index: 2;
     background-color: #111821;
-    border: 2px solid #e31b6d;
+    border: 2px solid #1E90FF;
     padding: 6px;
     transition: all 0.3s ease;
 }
@@ -347,7 +413,7 @@ label {
 }
 
 :focus {
-    box-shadow: 0 0 0 3px rgba(255, 50, 100, 0.4); 
+    box-shadow: 0 0 0 3px rgba(0, 162, 255, 0.766); 
     outline: none;
 }
 
