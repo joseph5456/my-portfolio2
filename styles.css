@@ -21,6 +21,9 @@ a {
 
 /* nav */
 .nav-bar {
+    position: sticky;
+    top: 100px;
+    left: 100px;
     color:white;
     display: flex;
     align-items: center;
