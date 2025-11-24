@@ -21,13 +21,13 @@ a {
 
 header {
     position:sticky;
-    top: 30px;
-    left: 30px;
+    top: 0px;
     z-index: 3;
 }
 
 /* nav */
 .nav-bar {
+    background-color: #111821;
     color:white;
     display: flex;
     align-items: center;
